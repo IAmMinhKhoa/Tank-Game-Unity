@@ -3,21 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
+  - detailsBottom
+  - obstacle
+  - enemies
+  - player
+  - items
+  - bullets
+  - detailsTop
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - detailsBottom
+  - obstacle
+  - enemies
+  - player
+  - items
+  - bullets
+  - detailsTop
   - 
   - 
   - 
@@ -40,4 +48,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ground
+    uniqueID: 1450586577
+    locked: 0
+  - name: detailsBottom
+    uniqueID: 2092187409
+    locked: 0
+  - name: obstacle
+    uniqueID: 1390655771
+    locked: 0
+  - name: enemies
+    uniqueID: 2776568183
+    locked: 0
+  - name: player
+    uniqueID: 2353111667
+    locked: 0
+  - name: items
+    uniqueID: 126759701
+    locked: 0
+  - name: bullets
+    uniqueID: 3180746173
+    locked: 0
+  - name: detailsTop
+    uniqueID: 3990642105
     locked: 0
