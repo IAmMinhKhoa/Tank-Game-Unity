@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Item_Health : MonoBehaviour
+{
+    public int val_heal=20;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Health health = collision.gameObject.GetComponent<Health>();
+
+            health.Heal(val_heal);
+            Destroy(gameObject);
+        }
+    
+    }
+   
+}

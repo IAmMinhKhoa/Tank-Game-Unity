@@ -12,6 +12,7 @@ TagManager:
   - items
   - bullets
   - detailsTop
+  - item_health
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - items
   - bullets
   - detailsTop
-  - 
+  - enemy_bullets
   - 
   - 
   - 
@@ -72,4 +73,7 @@ TagManager:
     locked: 0
   - name: detailsTop
     uniqueID: 3990642105
+    locked: 0
+  - name: item_health
+    uniqueID: 4229341701
     locked: 0
