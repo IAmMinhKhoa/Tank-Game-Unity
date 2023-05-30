@@ -40,12 +40,14 @@ public class ObjectPool : MonoBehaviour
         else
         {
             spawnedObject=objectPool.Dequeue(); //là thao tác xóa ph?n t? ? ??u hàng ??i
-           
+
             spawnedObject.SetActive(true);
         }
 
         objectPool.Enqueue(spawnedObject);//là thao tác thêm m?t ph?n t? vào cu?i c?a hàng ??i.
-        return spawnedObject;
+     
+           return spawnedObject;
+
     }
 
     private void CreateObjectParentIfNeeded()

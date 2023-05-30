@@ -10,7 +10,7 @@ public class Item_Health : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Health health = collision.gameObject.GetComponent<Health>();
-
+            Effect_Manager.instance.SpawnVFX("Prefab Eat Item Lightning", transform.position, Quaternion.identity); 
             health.Heal(val_heal);
             Destroy(gameObject);
         }

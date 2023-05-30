@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
 {
     [SerializeField] public int maxHealth = 100;
     public int currentHealth;
-    
     public event Action<int, int> OnHealthChanged ;
     public event Action<int> OnDamageTaken,OnAddHealt;
     private void Awake()
@@ -22,7 +21,8 @@ public class Health : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         OnDamageTaken?.Invoke(damage);
         if (currentHealth <= 0)
-        {
+        {  
+            Effect_Manager.instance.SpawnVFX("Particle Destroy", transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
@@ -35,7 +35,7 @@ public class Health : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
-
+    
 
 
 

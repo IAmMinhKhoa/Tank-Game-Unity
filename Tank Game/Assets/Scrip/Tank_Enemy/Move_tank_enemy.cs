@@ -41,20 +41,22 @@ public class Move_tank_enemy : MonoBehaviour
     void Doing_Rotation_Run(Vector2 currentPosition, Vector2 targetPosition)
     {
 
-        Quaternion rotaiton_turret = Quaternion.FromToRotation(Vector2.up, currentPosition - targetPosition);
+        Quaternion rotation_turret = Quaternion.FromToRotation(Vector2.up, targetPosition - currentPosition);
         Vector2 direction = (targetPosition - currentPosition).normalized;
+        float targetAngle = rotation_turret.eulerAngles.z;
 
         if (check_rotation)
         {
             rb.velocity = Vector2.zero;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotaiton_turret, rotationSpeed * Time.deltaTime);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation_turret, rotationSpeed * Time.deltaTime);
+            StartCoroutine(RotateTowards(targetAngle));
         }
         if (check_rotation == false)
             rb.velocity = direction * speed;
 
     }
 
-    void distance_tank_next_point(Vector2 current,Vector2 target)
+    void distance_tank_next_point(Vector2 current, Vector2 target)
     {
         if (Vector2.Distance(current, target) < 0.05f)
         {
@@ -69,4 +71,16 @@ public class Move_tank_enemy : MonoBehaviour
         yield return new WaitForSeconds(time_rotation);
         check_rotation = false;
     }
+
+    IEnumerator RotateTowards(float targetAngle)
+    {
+        Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
+
+        while (transform.rotation != targetRotation)
+        {
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 10 * Time.deltaTime);
+            yield return null;
+        }
+    }
+
 }

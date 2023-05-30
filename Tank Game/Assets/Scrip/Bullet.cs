@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -8,27 +9,36 @@ public class Bullet : MonoBehaviour
     public float speedBullet = 10;
     public int damage = 5;
     public float maxDistance = 10;
-    public GameObject explosionPrefab;
 
     protected Vector2 startPosition;
     protected float conquaredDistance = 0;
     protected Rigidbody2D rb2d;
     protected Health healt;
     public LayerMask[] allowedLayers;
-  
+
+    //public   ObjectPool pool;
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
-   
+    private void Start()
+    {
+       // pool.Innit(explosionPrefab, 10);
+        startPosition = transform.position;
+    }
 
     private void Update()
     {
         Init();
-        conquaredDistance =Vector2.Distance(transform.position,startPosition);
-        if (conquaredDistance >= maxDistance)
-            DisableObject();
+        
+        float distanceToStart = Vector2.Distance(transform.position, startPosition);
+        if (distanceToStart >= maxDistance)
+        {
+
+            gameObject.SetActive(false); // Deactivate the object
+        }
+
     }
 
     private void DisableObject()
@@ -44,7 +54,7 @@ public class Bullet : MonoBehaviour
     public void Init()
     {
         
-        startPosition = transform.position;
+       
         rb2d.velocity = transform.up * speedBullet;
     }
 
@@ -66,11 +76,12 @@ public class Bullet : MonoBehaviour
 
                     healt.TakeDamage(damage);
                 }
-                GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-                Destroy(explosion, 0.4f);
 
+             
+                Effect_Manager.instance.SpawnVFX("Particle Explosion", transform.position, Quaternion.identity);
+                Effect_Manager.instance.SpawnVFX("Prefab Explosion", transform.position, Quaternion.identity);
+                
             }
-
         }
     }
 

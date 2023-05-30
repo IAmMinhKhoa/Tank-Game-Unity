@@ -13,6 +13,10 @@ TagManager:
   - bullets
   - detailsTop
   - item_health
+  - Swamp
+  - Enemies_AI
+  - Coin
+  - item_Lightning
   layers:
   - Default
   - TransparentFX

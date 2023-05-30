@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class Turret_Enemy : MonoBehaviour
 {
     public Turret turretEnemy;
+    public Transform TankTuret;
     public Transform targetObject;
     public LayerMask allowedLayers;
     private Quaternion default_ps_turret;
+    public bool TurnBackTurret = true;
     bool playerIntrigger = false;
     bool canShoot = true;
     private void Start()
@@ -18,7 +19,7 @@ public class Turret_Enemy : MonoBehaviour
     private void Update()
     {
         LookAtTarget();
-
+   
     }
    
     void OnTriggerStay2D(Collider2D collision)
@@ -31,8 +32,13 @@ public class Turret_Enemy : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        targetObject = null;
-        playerIntrigger = false;
+       
+        if (allowedLayers == (allowedLayers | (1 << collision.gameObject.layer)))
+        {
+            targetObject = null;
+        
+            playerIntrigger = false;
+        }
     }
   
     void LookAtTarget()
@@ -40,26 +46,26 @@ public class Turret_Enemy : MonoBehaviour
         if (playerIntrigger)
         {
             Vector2 direction = new Vector2(
-            targetObject.position.x - transform.position.x,
-            targetObject.position.y - transform.position.y);
+            targetObject.position.x - TankTuret.position.x,
+            targetObject.position.y - TankTuret.position.y);
             Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, direction);
 
             float rotationSpeed = 5.0f; // T?c ?? chuy?n ??i
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            TankTuret.rotation = Quaternion.Lerp(TankTuret.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
 
             if (turretEnemy.canShoot)
                 turretEnemy.Shoot();
 
         }
-        else if (playerIntrigger==false)
+        else if (playerIntrigger==false&&TurnBackTurret)
         {
-            
-            Quaternion QAParent = transform.parent.rotation;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, QAParent, 100 * Time.deltaTime); ;
+          
+            Quaternion QAParent = transform.parent.parent.rotation;
+            TankTuret.rotation = Quaternion.RotateTowards(TankTuret.rotation, QAParent, 100 * Time.deltaTime); ;
         }
       
-            
+           
         
     }
    

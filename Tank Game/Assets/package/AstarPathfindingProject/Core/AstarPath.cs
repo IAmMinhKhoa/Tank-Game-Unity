@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using Pathfinding;
 #if UNITY_5_5_OR_NEWER
 using UnityEngine.Profiling;
-#endif
+using static Codice.CM.Common.Merge.MergePathResolver;
 
+#endif
 #if NETFX_CORE
 using Thread = Pathfinding.WindowsStore.Thread;
 #else
@@ -1781,7 +1782,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		System.GC.Collect();
 
 		if (logPathResults != PathLog.None && logPathResults != PathLog.OnlyErrors) {
-			Debug.Log("Scanning - Process took "+(lastScanTime*1000).ToString("0")+" ms to complete");
+			//Debug.Log("Scanning - Process took "+(lastScanTime*1000).ToString("0")+" ms to complete");
 		}
 	}
 
@@ -2160,4 +2161,5 @@ public class AstarPath : VersionedMonoBehaviour {
 
 		return nearestNode;
 	}
+
 }
