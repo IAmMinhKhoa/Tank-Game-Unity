@@ -8,14 +8,11 @@ public class Turret_Enemy : MonoBehaviour
     public Transform TankTuret;
     public Transform targetObject;
     public LayerMask allowedLayers;
-    private Quaternion default_ps_turret;
+   
     public bool TurnBackTurret = true;
     bool playerIntrigger = false;
    
-    private void Start()
-    {
-        default_ps_turret = transform.rotation;       
-    }
+  
     private void Update()
     {
         LookAtTarget();
