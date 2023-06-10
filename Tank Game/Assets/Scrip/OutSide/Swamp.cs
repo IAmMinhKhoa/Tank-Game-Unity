@@ -16,7 +16,7 @@ public class Swamp : MonoBehaviour
         {
             otherRigidbody.drag = adj_Swamp;
         }
-        if (otherRigidbody != null && tag_object == "Enemies_AI")
+        if (otherRigidbody != null && tag_object == "enemies")
         {
             AIPath aipath_tank = coll.gameObject.GetComponent<AIPath>();
             default_speed_object_AI  =aipath_tank.maxSpeed;

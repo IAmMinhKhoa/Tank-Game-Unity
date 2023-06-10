@@ -11,6 +11,7 @@ public class Move_tank_enemy : MonoBehaviour
     public float speed = 5f;
     public float rotationSpeed;
     public List<Transform> pathPoints;
+    public GameObject Points;
     public float time_rotation = 2f;
     private int currentPoint = 0;
     private Rigidbody2D rb;
@@ -18,10 +19,21 @@ public class Move_tank_enemy : MonoBehaviour
 
     void Start()
     {
+
+// Lấy tất cả các thành phần Transform của các đối tượng con của Points
+        Transform[] childTransforms = Points.GetComponentsInChildren<Transform>();
+        pathPoints = new List<Transform>();
+        foreach (Transform childTransform in childTransforms)
+        {
+            // Kiểm tra xem thành phần Transform có thuộc về Points hay không
+            if (childTransform != Points.transform)
+            {
+                pathPoints.Add(childTransform);
+            }
+        }
+
         gameObject.transform.position = pathPoints[0].position;
-
         rb = GetComponent<Rigidbody2D>();
-
     }
     void FixedUpdate()
     {

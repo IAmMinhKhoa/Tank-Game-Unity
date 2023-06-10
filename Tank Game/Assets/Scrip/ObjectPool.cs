@@ -7,7 +7,7 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
   
-
+    
     [SerializeField]
     protected GameObject objectToPool;
     public int poolsize = 5;
@@ -39,12 +39,12 @@ public class ObjectPool : MonoBehaviour
         }
         else
         {
-            spawnedObject=objectPool.Dequeue(); //là thao tác xóa ph?n t? ? ??u hàng ??i
+            spawnedObject=objectPool.Dequeue(); //lï¿½ thao tï¿½c xï¿½a ph?n t? ? ??u hï¿½ng ??i
 
             spawnedObject.SetActive(true);
         }
 
-        objectPool.Enqueue(spawnedObject);//là thao tác thêm m?t ph?n t? vào cu?i c?a hàng ??i.
+        objectPool.Enqueue(spawnedObject);//lï¿½ thao tï¿½c thï¿½m m?t ph?n t? vï¿½o cu?i c?a hï¿½ng ??i.
      
            return spawnedObject;
 
