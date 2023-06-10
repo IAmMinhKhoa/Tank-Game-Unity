@@ -11,7 +11,7 @@ public class Turret_Enemy : MonoBehaviour
     private Quaternion default_ps_turret;
     public bool TurnBackTurret = true;
     bool playerIntrigger = false;
-    bool canShoot = true;
+   
     private void Start()
     {
         default_ps_turret = transform.rotation;       

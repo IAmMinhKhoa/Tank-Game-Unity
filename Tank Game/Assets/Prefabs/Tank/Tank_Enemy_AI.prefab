@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 5511874548280719091}
   m_Layer: 8
   m_Name: Tank_Enemy_AI
-  m_TagString: Enemies_AI
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

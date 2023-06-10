@@ -14,7 +14,7 @@ public class TankController : MonoBehaviour
     protected AimTurret aimTurret;
     protected Turret[] turrets;
     public float timeRemainingItemLightning;
-    public bool isItemLightning = false;
+    public int isItemLightning = 0;//0 none, 1 eating, 2 notification
 
     private void Awake()
     {
@@ -59,9 +59,9 @@ public class TankController : MonoBehaviour
     }
     protected IEnumerator ItemLightning(float time)
     {
-        if (!isItemLightning)
+        if (isItemLightning==0)
         {
-            isItemLightning = true;
+            isItemLightning = 1;
             
             //get object and boost MAXSPEED AND ACCELERATION OF TANK PLAYER
             GameObject firstTankBase = transform.GetChild(0).gameObject;
@@ -78,19 +78,20 @@ public class TankController : MonoBehaviour
                 timeRemainingItemLightning = remainingTime;
                 remainingTime--;
                 yield return new WaitForSeconds(1);
-                
-                
             }
-
-            
-           
-            
             firstTankBase.GetComponent<TankMover>().MaxSpeed = temp_speed;
             firstTankBase.GetComponent<TankMover>().acceleration = temp_acceleration;
-            isItemLightning = false;
-        }  
-      
+            isItemLightning = 0;
+        }
+        else
+        {
+            isItemLightning = 2;
+        }
     }
-  
+    protected IEnumerator CoolDownDoubleEat(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isItemLightning = 2;
+    }
 
 }

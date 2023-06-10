@@ -17,6 +17,7 @@ TagManager:
   - Enemies_AI
   - Coin
   - item_Lightning
+  - boom
   layers:
   - Default
   - TransparentFX

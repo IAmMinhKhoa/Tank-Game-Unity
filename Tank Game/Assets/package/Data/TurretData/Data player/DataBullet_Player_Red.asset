@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DataBullet_Player_Red
   m_EditorClassIdentifier: 
   reloaDelay: 0.8
-  currentDelay: -0.0010661923
+  currentDelay: -0.00092988275

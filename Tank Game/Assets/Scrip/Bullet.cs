@@ -72,16 +72,20 @@ public class Bullet : MonoBehaviour
                 if (name_layer == "enemies"|| name_layer == "player")
                 {
                     healt = collision.gameObject.GetComponent<Health>();
-                    
-
                     healt.TakeDamage(damage);
                 }
 
-             
                 Effect_Manager.instance.SpawnVFX("Particle Explosion", transform.position, Quaternion.identity);
                 Effect_Manager.instance.SpawnVFX("Prefab Explosion", transform.position, Quaternion.identity);
                 
             }
+        }
+
+
+        if (collision.gameObject.CompareTag("boom"))
+        {
+            collision.gameObject.GetComponent<BomEvent>().DecreaseCD(1f);
+
         }
     }
 

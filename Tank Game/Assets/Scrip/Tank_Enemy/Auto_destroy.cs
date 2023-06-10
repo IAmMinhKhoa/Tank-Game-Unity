@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Auto_destroy : MonoBehaviour
 {
-    public int time = 10;
+    public float time = 10;
     IEnumerator DestroyAfterDelay(GameObject obj)
     {
         yield return new WaitForSeconds(time);
@@ -15,5 +15,6 @@ public class Auto_destroy : MonoBehaviour
     {
         StartCoroutine(DestroyAfterDelay(this.gameObject));
     }
+   
 
 }
