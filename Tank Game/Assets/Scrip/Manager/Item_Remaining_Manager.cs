@@ -6,51 +6,87 @@ using UnityEngine.UI;
 
 public class Item_Remaining_Manager : MonoBehaviour
 {
-    public GameObject itemParent;
-    public GameObject[] player;
-    protected  Text textCoolDownItem;
-    protected GameObject textNotification;
+
+
+
+
+    public List<GameObject> ItemReamingParent;
+    protected GameObject[] player;
+    public List<Text> textCoolDownItem;
+    public List<GameObject> textNotification;
     protected TankController TankController;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        LoadUIItem();
+    }
     void Start()
     {
-        
         player = GameObject.FindGameObjectsWithTag("Player");
      
         if (player.Count()!=0)
         {
             TankController = player[0].GetComponent<TankController>();
         }
-        textCoolDownItem = itemParent.transform.GetChild(0).GetComponent<Text>();
-        textNotification = itemParent.transform.GetChild(2).gameObject;
-
     }
-
+    protected  void LoadUIItem()
+    {
+        foreach (Transform child in transform)
+        {
+            ItemReamingParent.Add(child.gameObject);
+            child.gameObject.SetActive(false);
+        }
+        for (int i = 0; i < ItemReamingParent.Count(); i++)
+        {
+            textCoolDownItem.Add(ItemReamingParent[i].transform.GetChild(0).GetComponent<Text>());
+            textNotification.Add(ItemReamingParent[i].transform.GetChild(2).gameObject);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if(player.Count() != 0)
+        if(TankController!=null)
+            control_Ui_Item(TankController.isItemLightning, FindIndexItem("Item_Lightning"), TankController.timeRemainingItemLightning.ToString());
+    }
+    protected int FindIndexItem(string name)
+    {
+        int index = ItemReamingParent.FindIndex(gameObject => gameObject.name == name);
+       
+        if (index != -1)
         {
-            if (TankController.isItemLightning!=0)
+            // Game object ???c tìm th?y t?i v? trí "index"
+            return index;
+        }
+        else
+        {
+            // Không tìm th?y game object
+            Debug.Log("erro find name Item ");
+            return -1;
+        }
+    }
+    void control_Ui_Item(int status,int index,string timeRemaining)
+    {
+        if (player.Count() != 0)
+        {
+            if (status != 0)
             {
-                textCoolDownItem.transform.parent.gameObject.SetActive(true);
-                textCoolDownItem.text = TankController.timeRemainingItemLightning.ToString();
-                if (TankController.isItemLightning == 2)
+                textCoolDownItem[index].transform.parent.gameObject.SetActive(true);
+                textCoolDownItem[index].text = timeRemaining;
+                if (status == 2)
                 {
-                    textNotification.SetActive(true);
+                    textNotification[index].SetActive(true);
                 }
             }
 
-            else if(TankController.isItemLightning==0)
+            else if (status == 0)
             {
-                textCoolDownItem.transform.parent.gameObject.SetActive(false);
-                textCoolDownItem.text = " ";
-                textNotification.SetActive(false    );
+                textCoolDownItem[index].transform.parent.gameObject.SetActive(false);
+                textCoolDownItem[index].text = " ";
+                textNotification[index].SetActive(false);
             }
-          
-        }        
-    }
 
+        }
+    }
     
 
 

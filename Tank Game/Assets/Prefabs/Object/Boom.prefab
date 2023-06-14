@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 775407513467552462}
   - component: {fileID: 775407513467552465}
   - component: {fileID: 775407513467552466}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boom
   m_TagString: boom
   m_Icon: {fileID: 0}

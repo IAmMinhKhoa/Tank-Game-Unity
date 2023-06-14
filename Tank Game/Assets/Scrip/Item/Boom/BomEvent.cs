@@ -8,9 +8,11 @@ public class BomEvent : MonoBehaviour
 {
     public float CoolDownBom = 3;
     public TextMeshProUGUI TextCD;
+ 
     private void Start()
     {
         StartCoroutine(IECoolDownBoom(CoolDownBom));
+     
         
     }
     private void Update()
@@ -20,7 +22,7 @@ public class BomEvent : MonoBehaviour
     protected IEnumerator IECoolDownBoom(float time)
     {
          CoolDownBom = time;
-        while (CoolDownBom > 0)
+        while (CoolDownBom > 1)
         {
            
             CoolDownBom--;

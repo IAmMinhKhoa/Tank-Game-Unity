@@ -17,16 +17,23 @@ public class Boom : MonoBehaviour
             // Ki?m tra xem va ch?m có x?y ra v?i các layer ???c cho phép
             if (((1 << collision.gameObject.layer) & allowedLayers[i].value) != 0)
             {
-                
                 String name_layer = LayerMask.LayerToName(collision.gameObject.layer);
-                if (name_layer == "enemies" || name_layer == "player" )
+                Debug.Log(name_layer);
+                if (name_layer == "enemies" || name_layer == "player")
                 {
-                    healt = collision.gameObject.GetComponent<Health>();
 
-                    //Debug.Log("cham");
+                    healt = collision.gameObject.GetComponent<Health>();
                     healt.TakeDamage(damage);
                 }
             }
+        }
+        if (collision.tag== "Player")
+        {
+            healt = collision.gameObject.GetComponent<Health>();
+
+            Debug.Log("cham");
+            healt.TakeDamage(damage);
+
         }
     }
 }

@@ -121,7 +121,7 @@ MonoBehaviour:
     m_Bits: 512
   - serializedVersion: 2
     m_Bits: 256
-  damage: 5
+  damage: 100
 --- !u!95 &8780545428774307228
 Animator:
   serializedVersion: 4

@@ -58,7 +58,7 @@ public class Turret_Enemy : MonoBehaviour
         else if (playerIntrigger==false&&TurnBackTurret)
         {
           
-            Quaternion QAParent = transform.parent.parent.rotation;
+            Quaternion QAParent = transform.parent.rotation;
             TankTuret.rotation = Quaternion.RotateTowards(TankTuret.rotation, QAParent, 100 * Time.deltaTime); ;
         }
       
