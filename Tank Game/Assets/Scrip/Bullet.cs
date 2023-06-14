@@ -63,10 +63,10 @@ public class Bullet : MonoBehaviour
        
         for (int i = 0; i < allowedLayers.Length; i++)
         {
-            // Ki?m tra xem va ch?m có x?y ra v?i các layer ???c cho phép
+            // Ki?m tra xem va ch?m cï¿½ x?y ra v?i cï¿½c layer ???c cho phï¿½p
             if (((1 << collision.gameObject.layer) & allowedLayers[i].value) != 0)
             {
-                // X? lý va ch?m ? ?ây
+                // X? lï¿½ va ch?m ? ?ï¿½y
                 DisableObject();
                 String name_layer = LayerMask.LayerToName(collision.gameObject.layer);
                 if (name_layer == "enemies"|| name_layer == "player")
@@ -74,7 +74,7 @@ public class Bullet : MonoBehaviour
                     healt = collision.gameObject.GetComponent<Health>();
                     healt.TakeDamage(damage);
                 }
-
+        
                 Effect_Manager.instance.SpawnVFX("Particle Explosion", transform.position, Quaternion.identity);
                 Effect_Manager.instance.SpawnVFX("Prefab Explosion", transform.position, Quaternion.identity);
                 

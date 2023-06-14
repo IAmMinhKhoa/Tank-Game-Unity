@@ -31,6 +31,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             OnShoot?.Invoke();
+             
         }
     }
 

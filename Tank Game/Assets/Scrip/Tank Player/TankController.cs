@@ -37,6 +37,7 @@ public class TankController : MonoBehaviour
         foreach (var turret in turrets)
         {
             turret.Shoot();
+           
         }
     }
     
