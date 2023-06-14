@@ -9,6 +9,7 @@ public class Item_Lightning : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Sound_Manager.instance.PlaySound(SoundType.PickUp);
             TankController control= collision.gameObject.GetComponent<TankController>();
             control.EatItemLightning(time);
             Effect_Manager.instance.SpawnVFX("Prefab Eat Item Lightning", transform.position, Quaternion.identity);

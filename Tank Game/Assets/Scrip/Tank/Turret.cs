@@ -39,9 +39,10 @@ public class Turret : MonoBehaviour
             
             canShoot = false;
             turretData.currentDelay = turretData.reloaDelay;
+            Sound_Manager.instance.PlaySound(SoundType.Shoot);
             foreach (var barrel in turetBarels)
             {
-                Sound_Manager.instance.PlaySound(SoundType.Shoot);
+               
                 GameObject bullet = bulletPool.CreateObject();
                 bullet.transform.position = barrel.position;
                 bullet.transform.localRotation = barrel.rotation;

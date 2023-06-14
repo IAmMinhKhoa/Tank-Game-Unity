@@ -21,8 +21,10 @@ public class Health : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         OnDamageTaken?.Invoke(damage);
         if (currentHealth <= 0)
-        {  
+        {
+            Sound_Manager.instance.PlaySound(SoundType.Explosion);
             Effect_Manager.instance.SpawnVFX("Particle Destroy", transform.position, Quaternion.identity);
+           
             Destroy(gameObject);
         }
     }

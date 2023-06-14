@@ -13,6 +13,7 @@ public class Coin_PickUp : MonoBehaviour
             Coin_Manager manager = Coin_Manager.instance;
             if (manager != null)
             {
+                Sound_Manager.instance.PlaySound(SoundType.PickUp);
                 manager.coin += value;
                 Destroy(gameObject);
             }

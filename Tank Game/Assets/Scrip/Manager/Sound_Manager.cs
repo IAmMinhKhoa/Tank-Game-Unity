@@ -5,7 +5,9 @@ using UnityEngine;
 public enum SoundType
 {
     BackGround,
-    Shoot
+    Shoot,
+    Explosion,
+    PickUp
 }
 
 [System.Serializable]

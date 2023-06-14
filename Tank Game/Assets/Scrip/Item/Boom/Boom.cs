@@ -9,6 +9,10 @@ public class Boom : MonoBehaviour
     public LayerMask[] allowedLayers;
     protected Health healt;
     public int damage = 30;
+    private void Start()
+    {
+        Sound_Manager.instance.PlaySound(SoundType.Explosion);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
