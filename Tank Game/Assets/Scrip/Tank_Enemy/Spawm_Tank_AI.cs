@@ -40,6 +40,7 @@ public class Spawm_Tank_AI : MonoBehaviour
     {
         isSpawning = true;
         yield return new WaitForSeconds(delay);
+        Sound_Manager.instance.PlaySound(SoundType.Spam_Tank);
         SpawnEnemy();
         isSpawning = false;
     }

@@ -18,6 +18,8 @@ TagManager:
   - Coin
   - item_Lightning
   - boom
+  - BaseBoss
+  - Spam_Enemies_AI
   layers:
   - Default
   - TransparentFX

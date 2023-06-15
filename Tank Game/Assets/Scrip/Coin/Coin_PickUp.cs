@@ -14,6 +14,7 @@ public class Coin_PickUp : MonoBehaviour
             if (manager != null)
             {
                 Sound_Manager.instance.PlaySound(SoundType.PickUp);
+                Effect_Manager.instance.SpawnVFX("Prefab Eat Item", transform.position, Quaternion.identity);
                 manager.coin += value;
                 Destroy(gameObject);
             }

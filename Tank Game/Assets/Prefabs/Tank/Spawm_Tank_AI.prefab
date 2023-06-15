@@ -383,9 +383,10 @@ GameObject:
   - component: {fileID: 4448367630880453265}
   - component: {fileID: 4448367630880453264}
   - component: {fileID: 4448367630880453279}
+  - component: {fileID: 18234037}
   m_Layer: 8
   m_Name: Spawm_Tank_AI
-  m_TagString: Untagged
+  m_TagString: Spam_Enemies_AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,7 +424,7 @@ MonoBehaviour:
   tank_AI: {fileID: 5511874548280719076, guid: f69b55be3ae9d4a4aa83508818bf8016, type: 3}
   parent_count: {fileID: 4448367630385799847}
   maxEnemies: 3
-  spawnDelay: 10
+  spawnDelay: 15
 --- !u!114 &4448367630880453265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,6 +483,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1454802, y: 1.4609032}
   m_EdgeRadius: 0
+--- !u!50 &18234037
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448367630880453278}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4448367631058531060
 GameObject:
   m_ObjectHideFlags: 0

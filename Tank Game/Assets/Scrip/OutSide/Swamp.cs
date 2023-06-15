@@ -15,12 +15,17 @@ public class Swamp : MonoBehaviour
         if (otherRigidbody != null &&tag_object!="bullets")
         {
             otherRigidbody.drag = adj_Swamp;
+            Sound_Manager.instance.PlaySound(SoundType.Swamp);
         }
         if (otherRigidbody != null && tag_object == "enemies")
         {
             AIPath aipath_tank = coll.gameObject.GetComponent<AIPath>();
-            default_speed_object_AI  =aipath_tank.maxSpeed;
-            aipath_tank.maxSpeed = 0.2f;
+            if (aipath_tank != null) {
+                default_speed_object_AI = aipath_tank.maxSpeed;
+                aipath_tank.maxSpeed = 0.2f;
+                Sound_Manager.instance.PlaySound(SoundType.Swamp);
+            }
+            
         }
     }
     void OnTriggerExit2D(Collider2D coll)
@@ -30,11 +35,12 @@ public class Swamp : MonoBehaviour
         if (otherRigidbody != null )
         {
             otherRigidbody.drag = 0f;
-           
-          
+
+            Sound_Manager.instance.StopSound(SoundType.Swamp);
         }
         if (aipath_tank != null)
         {
+            Sound_Manager.instance.StopSound(SoundType.Swamp);
             aipath_tank.maxSpeed = default_speed_object_AI;
         }
     }

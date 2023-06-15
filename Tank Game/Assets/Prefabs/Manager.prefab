@@ -1,5 +1,141 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &189150197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 189150198}
+  - component: {fileID: 189150199}
+  m_Layer: 0
+  m_Name: Manager Use Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &189150198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189150197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2304057829131035033}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &189150199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189150197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928366dfe4b72e44ab2fa4eab6b6022b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemAndButtonPairs:
+  - itemData: {fileID: 11400000, guid: eb0aea7e03972ca4bb33830b954bfc61, type: 2}
+    button: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 0be68f6bcccdafa4aa122ed591daf40f, type: 2}
+    button: {fileID: 0}
+--- !u!1 &1824247732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824247733}
+  - component: {fileID: 1824247734}
+  m_Layer: 0
+  m_Name: Manager Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824247733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824247732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2304057829131035033}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824247734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824247732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30b9269b7733e945bf38654080dbce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BackGround
+    clip: {fileID: 8300000, guid: 4a8a2fd15847c4e478e80dc4bf942c45, type: 3}
+    volume: 0.121
+    pitch: 1.39
+    loop: 1
+    source: {fileID: 0}
+  - name: Shoot
+    clip: {fileID: 8300000, guid: 8a344cf80d1d86241af87e6fa221aea2, type: 3}
+    volume: 0.137
+    pitch: 1.9
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 93e8f5bdd26643842b4be87e8bf7cbb0, type: 3}
+    volume: 0.7
+    pitch: 1.9
+    loop: 0
+    source: {fileID: 0}
+  - name: PickUp
+    clip: {fileID: 8300000, guid: 812cccefdfe07734f9ab2fb7985523b0, type: 3}
+    volume: 0.799
+    pitch: 1.9
+    loop: 0
+    source: {fileID: 0}
+  - name: Error
+    clip: {fileID: 8300000, guid: 95d2b0674cef02e4184804ef48a8256e, type: 3}
+    volume: 0.713
+    pitch: 1.9
+    loop: 0
+    source: {fileID: 0}
+  - name: TankTrack
+    clip: {fileID: 8300000, guid: 2a14520c6992b4d41b5d4318c114d961, type: 3}
+    volume: 0.217
+    pitch: 1.9
+    loop: 1
+    source: {fileID: 0}
+  - name: Swamp
+    clip: {fileID: 8300000, guid: b19cac2b38af11846bda0ed3ce43564d, type: 3}
+    volume: 0.217
+    pitch: 1.9
+    loop: 1
+    source: {fileID: 0}
 --- !u!1 &2304057827898146546
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +241,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2304057828452013230}
-  - component: {fileID: 2304057828452013231}
   m_Layer: 0
   m_Name: Manager Item Remaining
   m_TagString: Untagged
@@ -128,20 +263,6 @@ Transform:
   m_Father: {fileID: 2304057829131035033}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2304057828452013231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304057828452013225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d22c0491f064e478c6aa87dfd4b96e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemParent: {fileID: 0}
-  player: []
 --- !u!1 &2304057829131035035
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +294,8 @@ Transform:
   - {fileID: 2304057827914294921}
   - {fileID: 2304057827898146547}
   - {fileID: 2304057828452013230}
+  - {fileID: 189150198}
+  - {fileID: 1824247733}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -419,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3277826159057868907, guid: 7db54ca7c675dac438f8d35a6043b908, type: 3}
       propertyPath: m_Name
-      value: Prefab Eat Item Lightning
+      value: Prefab Eat Item
       objectReference: {fileID: 0}
     - target: {fileID: 3277826159057868907, guid: 7db54ca7c675dac438f8d35a6043b908, type: 3}
       propertyPath: m_IsActive

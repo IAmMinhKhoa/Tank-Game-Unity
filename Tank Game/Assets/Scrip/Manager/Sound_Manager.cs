@@ -9,7 +9,9 @@ public enum SoundType
     Explosion,
     PickUp,
     Error,
-    TankTrack
+    TankTrack,
+    Swamp,
+    Spam_Tank
 }
 
 [System.Serializable]

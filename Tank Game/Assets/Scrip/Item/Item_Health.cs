@@ -11,7 +11,7 @@ public class Item_Health : MonoBehaviour
         {
             Sound_Manager.instance.PlaySound(SoundType.PickUp);
             Health health = collision.gameObject.GetComponent<Health>();
-            Effect_Manager.instance.SpawnVFX("Prefab Eat Item Lightning", transform.position, Quaternion.identity); 
+            Effect_Manager.instance.SpawnVFX("Prefab Eat Item", transform.position, Quaternion.identity); 
             health.Heal(val_heal);
             Destroy(gameObject);
         }

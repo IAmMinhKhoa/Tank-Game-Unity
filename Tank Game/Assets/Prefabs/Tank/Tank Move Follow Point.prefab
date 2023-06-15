@@ -131,10 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   rotationSpeed: -90
-  pathPoints:
-  - {fileID: 4822216477388530172}
-  - {fileID: 4822216478041942026}
-  - {fileID: 4822216477789634385}
+  pathPoints: []
+  Points: {fileID: 4822216477507595795}
   time_rotation: 2
 --- !u!1 &1051002156726605915
 GameObject:
