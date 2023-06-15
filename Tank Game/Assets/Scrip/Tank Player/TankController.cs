@@ -45,6 +45,7 @@ public class TankController : MonoBehaviour
     {
         
         tankMover.Move(movementVector);
+        
     }
 
     public void HandleTurretMovement(Vector2 pointerPosition)
@@ -86,6 +87,7 @@ public class TankController : MonoBehaviour
         }
         else
         {
+            Sound_Manager.instance.PlaySound(SoundType.Error);
             isItemLightning = 2;
         }
     }

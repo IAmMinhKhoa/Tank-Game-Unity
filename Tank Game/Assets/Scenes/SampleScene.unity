@@ -16637,13 +16637,13 @@ MonoBehaviour:
   sounds:
   - name: BackGround
     clip: {fileID: 8300000, guid: 4a8a2fd15847c4e478e80dc4bf942c45, type: 3}
-    volume: 0.15
+    volume: 0.121
     pitch: 1.39
     loop: 1
     source: {fileID: 0}
   - name: Shoot
     clip: {fileID: 8300000, guid: 8a344cf80d1d86241af87e6fa221aea2, type: 3}
-    volume: 0.2
+    volume: 0.137
     pitch: 1.9
     loop: 0
     source: {fileID: 0}
@@ -16655,9 +16655,21 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PickUp
     clip: {fileID: 8300000, guid: 812cccefdfe07734f9ab2fb7985523b0, type: 3}
-    volume: 0.638
+    volume: 0.799
     pitch: 1.9
     loop: 0
+    source: {fileID: 0}
+  - name: Error
+    clip: {fileID: 8300000, guid: 95d2b0674cef02e4184804ef48a8256e, type: 3}
+    volume: 0.713
+    pitch: 1.9
+    loop: 0
+    source: {fileID: 0}
+  - name: TankTrack
+    clip: {fileID: 8300000, guid: 2a14520c6992b4d41b5d4318c114d961, type: 3}
+    volume: 0.217
+    pitch: 1.9
+    loop: 1
     source: {fileID: 0}
 --- !u!1001 &1912967169
 PrefabInstance:

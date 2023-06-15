@@ -54,12 +54,12 @@ public class Item_Remaining_Manager : MonoBehaviour
        
         if (index != -1)
         {
-            // Game object ???c tìm th?y t?i v? trí "index"
+            // Game object ???c tï¿½m th?y t?i v? trï¿½ "index"
             return index;
         }
         else
         {
-            // Không tìm th?y game object
+            // Khï¿½ng tï¿½m th?y game object
             Debug.Log("erro find name Item ");
             return -1;
         }
@@ -75,6 +75,7 @@ public class Item_Remaining_Manager : MonoBehaviour
                 if (status == 2)
                 {
                     textNotification[index].SetActive(true);
+                    
                 }
             }
 

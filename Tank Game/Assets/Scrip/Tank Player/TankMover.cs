@@ -1,6 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TankMover : MonoBehaviour
@@ -17,6 +17,8 @@ public class TankMover : MonoBehaviour
     public float acceleration;
     public float speedRoataion;
     public float deacceleration;
+    bool isMove=false;
+    bool soundTrack=false;
     private void Awake()
     {
         rb2d = GetComponentInParent<Rigidbody2D>();
@@ -29,7 +31,7 @@ public class TankMover : MonoBehaviour
     {
         this.movementVector = movementvector;
         CalculateSpeed(movementvector);
-
+        
         if (movementVector.y > 0)
         {
             currentForewardDirection = 1;
@@ -49,10 +51,12 @@ public class TankMover : MonoBehaviour
         }
         if (movementvector == Vector2.zero)
         {
+            isMove=false;
             currentSpeed -= deacceleration * Time.deltaTime;
         }
         else if (Mathf.Abs(movementvector.y) > 0)
         {
+            isMove=true;
             currentSpeed += acceleration * Time.deltaTime;
         }
        
@@ -66,7 +70,15 @@ public class TankMover : MonoBehaviour
         Time.fixedDeltaTime = 0.01f;
         rb2d.velocity = (Vector2)transform.up * currentSpeed *currentForewardDirection * Time.fixedDeltaTime;
         rb2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -movementVector.x * speedRoataion * Time.fixedDeltaTime));
-
+        if(isMove==true && soundTrack==false){
+            soundTrack=true;
+            Sound_Manager.instance.PlaySound(SoundType.TankTrack);
+        }else if(isMove==false)
+        {
+            soundTrack=false;
+            Sound_Manager.instance.StopSound(SoundType.TankTrack);
+        }
+        
     }
 
 

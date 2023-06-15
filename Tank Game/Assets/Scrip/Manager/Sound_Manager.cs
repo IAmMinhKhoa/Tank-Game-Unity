@@ -7,7 +7,9 @@ public enum SoundType
     BackGround,
     Shoot,
     Explosion,
-    PickUp
+    PickUp,
+    Error,
+    TankTrack
 }
 
 [System.Serializable]
