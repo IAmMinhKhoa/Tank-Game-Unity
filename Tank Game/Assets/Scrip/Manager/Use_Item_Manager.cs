@@ -22,9 +22,13 @@ public class Use_Item_Manager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("b"))
         {
             UseObject(itemAndButtonPairs[0].itemData);
+        }
+        if (Input.GetKeyDown("space"))
+        {
+            UseObject(itemAndButtonPairs[1].itemData);
         }
         GetTextInBtn(itemAndButtonPairs[0].button).text = itemAndButtonPairs[0].itemData.Quantity.ToString();
         GetTextInBtn(itemAndButtonPairs[1].button).text = itemAndButtonPairs[1].itemData.Quantity.ToString();

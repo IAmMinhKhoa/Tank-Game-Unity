@@ -11,7 +11,8 @@ public enum SoundType
     Error,
     TankTrack,
     Swamp,
-    Spam_Tank
+    Spam_Tank,
+    Click
 }
 
 [System.Serializable]
@@ -27,6 +28,13 @@ public class Sound
 
     [HideInInspector]
     public AudioSource source;
+    [HideInInspector]
+    public float originalVolume; // L?u tr? giá tr? âm l??ng ban ??u c?a âm thanh
+
+    public void SetOriginalVolume(float value)
+    {
+        originalVolume = value;
+    }
 }
 
 public class Sound_Manager : MonoBehaviour
@@ -56,6 +64,7 @@ public class Sound_Manager : MonoBehaviour
         foreach (Sound sound in sounds)
         {
             AudioSource source = gameObject.AddComponent<AudioSource>();
+            sound.SetOriginalVolume(sound   .volume); // L?u tr? giá tr? âm l??ng ban ??u c?a âm thanh
             source.clip = sound.clip;
             source.volume = sound.volume;
             source.pitch = sound.pitch;
@@ -85,4 +94,21 @@ public class Sound_Manager : MonoBehaviour
             audioSources[soundType].Stop();
         }
     }
+    public void PauseSound()
+    {
+        foreach (KeyValuePair<SoundType, AudioSource> entry in audioSources)
+        {
+            entry.Value.volume = 0f;
+        }
+       
+    }
+    public void SetAllVolumesToOriginal()
+    {
+        foreach (KeyValuePair<SoundType, AudioSource> entry in audioSources)
+        {
+            Sound sound = sounds.Find(s => s.name == entry.Key.ToString());
+            entry.Value.volume = sound.originalVolume;
+        }
+    }
+
 }
