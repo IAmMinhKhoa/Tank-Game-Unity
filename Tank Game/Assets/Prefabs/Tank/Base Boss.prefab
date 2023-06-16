@@ -1330,9 +1330,10 @@ GameObject:
   - component: {fileID: 380233322212856662}
   - component: {fileID: 380233322212856661}
   - component: {fileID: 380233322212856660}
+  - component: {fileID: 136636245}
   m_Layer: 8
   m_Name: Spawm_Tank_AI (1)
-  m_TagString: Untagged
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1429,6 +1430,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1454802, y: 1.4609032}
   m_EdgeRadius: 0
+--- !u!50 &136636245
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380233322212856658}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &380233322230148891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,9 +2694,10 @@ GameObject:
   - component: {fileID: 380233322750726293}
   - component: {fileID: 380233322750726292}
   - component: {fileID: 380233322750726291}
+  - component: {fileID: 742644757}
   m_Layer: 8
   m_Name: Spawm_Tank_AI
-  m_TagString: Untagged
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2771,6 +2794,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1454802, y: 1.4609032}
   m_EdgeRadius: 0
+--- !u!50 &742644757
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380233322750726288}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &380233322754458461
 GameObject:
   m_ObjectHideFlags: 0

@@ -53,8 +53,6 @@ public class Bullet : MonoBehaviour
 
     public void Init()
     {
-        
-       
         rb2d.velocity = transform.up * speedBullet;
     }
 

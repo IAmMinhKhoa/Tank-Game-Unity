@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 18234037}
   m_Layer: 8
   m_Name: Spawm_Tank_AI
-  m_TagString: Spam_Enemies_AI
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

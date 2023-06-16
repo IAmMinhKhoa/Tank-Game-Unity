@@ -12,7 +12,8 @@ public enum SoundType
     TankTrack,
     Swamp,
     Spam_Tank,
-    Click
+    Click,
+    BackGround_GameOver
 }
 
 [System.Serializable]
@@ -29,7 +30,7 @@ public class Sound
     [HideInInspector]
     public AudioSource source;
     [HideInInspector]
-    public float originalVolume; // L?u tr? giá tr? âm l??ng ban ??u c?a âm thanh
+    public float originalVolume; // L?u tr? giï¿½ tr? ï¿½m l??ng ban ??u c?a ï¿½m thanh
 
     public void SetOriginalVolume(float value)
     {
@@ -64,7 +65,7 @@ public class Sound_Manager : MonoBehaviour
         foreach (Sound sound in sounds)
         {
             AudioSource source = gameObject.AddComponent<AudioSource>();
-            sound.SetOriginalVolume(sound   .volume); // L?u tr? giá tr? âm l??ng ban ??u c?a âm thanh
+            sound.SetOriginalVolume(sound   .volume); // L?u tr? giï¿½ tr? ï¿½m l??ng ban ??u c?a ï¿½m thanh
             source.clip = sound.clip;
             source.volume = sound.volume;
             source.pitch = sound.pitch;

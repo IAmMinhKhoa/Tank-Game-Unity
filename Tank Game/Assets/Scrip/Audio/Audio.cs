@@ -10,8 +10,14 @@ public class Audio : MonoBehaviour
     [SerializeField] protected Sprite sprite_UnMute;
     protected Image imgBtn;
     protected bool isMute = false;
+   
     private void Start()
     {
+          Sound_Manager = FindObjectOfType<Sound_Manager>();
+         if (Sound_Manager == null)
+        {
+            Debug.Log("Error Find");
+        }
         imgBtn =GetComponent<Image>();
     }
     public void OnOffAudio()

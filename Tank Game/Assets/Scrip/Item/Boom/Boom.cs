@@ -18,7 +18,7 @@ public class Boom : MonoBehaviour
 
         for (int i = 0; i < allowedLayers.Length; i++)
         {
-            // Ki?m tra xem va ch?m có x?y ra v?i các layer ???c cho phép
+            // Ki?m tra xem va ch?m cï¿½ x?y ra v?i cï¿½c layer ???c cho phï¿½p
             if (((1 << collision.gameObject.layer) & allowedLayers[i].value) != 0)
             {
                 String name_layer = LayerMask.LayerToName(collision.gameObject.layer);
@@ -35,7 +35,7 @@ public class Boom : MonoBehaviour
         {
             healt = collision.gameObject.GetComponent<Health>();
 
-            Debug.Log("cham");
+            
             healt.TakeDamage(damage);
 
         }

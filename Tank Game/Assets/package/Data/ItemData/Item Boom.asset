@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Item Boom
   m_EditorClassIdentifier: 
   PrefabItem: {fileID: 775407513467552461, guid: d1217de8cfdb0a444bc58b5d89b3f57b, type: 3}
-  Quantity: 300
+  Quantity: 9806
