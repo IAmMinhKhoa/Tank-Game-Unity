@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,8 @@ public enum SoundType
     Swamp,
     Spam_Tank,
     Click,
-    BackGround_GameOver
+    BackGround_GameOver,
+    BackGround_Choose_Level
 }
 
 [System.Serializable]
@@ -45,6 +47,7 @@ public class Sound_Manager : MonoBehaviour
     public List<Sound> sounds;
 
     private Dictionary<SoundType, AudioSource> audioSources;
+    public int index_Sound_BR=1;
 
     private void Awake()
     {
@@ -58,7 +61,7 @@ public class Sound_Manager : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
+        
 
         audioSources = new Dictionary<SoundType, AudioSource>();
 
@@ -75,9 +78,22 @@ public class Sound_Manager : MonoBehaviour
         }
        
     }
+    
     void Start()
     {
-         Sound_Manager.instance.PlaySound(SoundType.BackGround);
+         PlayBackGround(index_Sound_BR);
+    }
+    void PlayBackGround(int index){
+        if(index==1){
+            Sound_Manager.instance.PlaySound(SoundType.BackGround);
+        }
+        else if(index==2){
+            Sound_Manager.instance.PlaySound(SoundType.BackGround_GameOver);
+        }
+        else if(index==3){
+            Sound_Manager.instance.PlaySound(SoundType.BackGround_Choose_Level);
+        }
+        
     }
 
     public void PlaySound(SoundType soundType)

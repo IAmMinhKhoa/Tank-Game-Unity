@@ -4,32 +4,29 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class System_Game : MonoBehaviour
 {
-  public TMP_Text textCount;
-  [SerializeField] protected int countEnemies;
-  [SerializeField] GameObject ScreenOver;
-  [SerializeField] GameObject[] ArPlayer;
+  public static System_Game instance;
+  public int countEnemies;
+  public GameObject[] ArPlayer;
+  public int indexPlayer;
   [SerializeField] GameObject[] enemies;
 private void Start() {
-  if(textCount==null)
-  {
-    Debug.Log("Error Find");
-  }
+  instance=this;
+  DontDestroyOnLoad(transform.gameObject);
+
 }
   void FixedUpdate()
   {
-    PlayerDie();
+    ArPlayer = GameObject.FindGameObjectsWithTag("Player");
     enemies = GameObject.FindGameObjectsWithTag("enemies");
     countEnemies=enemies.Length;
-    textCount.text=countEnemies.ToString();
-  }
-  protected void PlayerDie(){
-    ArPlayer = GameObject.FindGameObjectsWithTag("Player");
-    if(ArPlayer.Count()==0){
-
-        ScreenOver.SetActive(true);
-    }
-  }
    
+    
+  }
+ 
+   public void cc(){
+    SceneManager.LoadScene("SampleScene");
+   }
 }

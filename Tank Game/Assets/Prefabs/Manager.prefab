@@ -100,42 +100,71 @@ MonoBehaviour:
     pitch: 1.39
     loop: 1
     source: {fileID: 0}
+    originalVolume: 0
   - name: Shoot
     clip: {fileID: 8300000, guid: 8a344cf80d1d86241af87e6fa221aea2, type: 3}
     volume: 0.137
     pitch: 1.9
     loop: 0
     source: {fileID: 0}
+    originalVolume: 0
   - name: Explosion
     clip: {fileID: 8300000, guid: 93e8f5bdd26643842b4be87e8bf7cbb0, type: 3}
     volume: 0.7
     pitch: 1.9
     loop: 0
     source: {fileID: 0}
+    originalVolume: 0
   - name: PickUp
     clip: {fileID: 8300000, guid: 812cccefdfe07734f9ab2fb7985523b0, type: 3}
     volume: 0.799
     pitch: 1.9
     loop: 0
     source: {fileID: 0}
+    originalVolume: 0
   - name: Error
     clip: {fileID: 8300000, guid: 95d2b0674cef02e4184804ef48a8256e, type: 3}
     volume: 0.713
     pitch: 1.9
     loop: 0
     source: {fileID: 0}
+    originalVolume: 0
   - name: TankTrack
     clip: {fileID: 8300000, guid: 2a14520c6992b4d41b5d4318c114d961, type: 3}
     volume: 0.217
     pitch: 1.9
     loop: 1
     source: {fileID: 0}
+    originalVolume: 0
   - name: Swamp
     clip: {fileID: 8300000, guid: b19cac2b38af11846bda0ed3ce43564d, type: 3}
     volume: 0.217
     pitch: 1.9
     loop: 1
     source: {fileID: 0}
+    originalVolume: 0
+  - name: Spam_Tank
+    clip: {fileID: 8300000, guid: 8dd80f00fa8c699479295229b158cc53, type: 3}
+    volume: 0.217
+    pitch: 1.9
+    loop: 0
+    source: {fileID: 0}
+    originalVolume: 0
+  - name: BackGround_GameOver
+    clip: {fileID: 8300000, guid: eddd3bc1af0fe1d4a95598d9014bdcd5, type: 3}
+    volume: 1
+    pitch: 1.9
+    loop: 1
+    source: {fileID: 0}
+    originalVolume: 0
+  - name: BackGround_Choose_Level
+    clip: {fileID: 8300000, guid: 9562577ea9092464da07828f040a2826, type: 3}
+    volume: 0.722
+    pitch: 1.9
+    loop: 1
+    source: {fileID: 0}
+    originalVolume: 0
+  index_Sound_BR: 1
 --- !u!1 &2304057827898146546
 GameObject:
   m_ObjectHideFlags: 0
