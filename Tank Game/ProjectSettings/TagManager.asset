@@ -20,6 +20,7 @@ TagManager:
   - boom
   - BaseBoss
   - Spam_Enemies_AI
+  - System_Game
   layers:
   - Default
   - TransparentFX

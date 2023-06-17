@@ -241,6 +241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turrentParent: {fileID: 4813508185760427104}
+  timeRemainingItemLightning: 0
+  isItemLightning: 0
 --- !u!61 &4813508185512520291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -884,6 +886,10 @@ MonoBehaviour:
   movementData: {fileID: 11400000, guid: 87ea59e40db604342b8157f429dd37d5, type: 2}
   currentSpeed: 0
   currentForewardDirection: 1
+  MaxSpeed: 0
+  acceleration: 0
+  speedRoataion: 0
+  deacceleration: 0
 --- !u!1 &4813508186710572622
 GameObject:
   m_ObjectHideFlags: 0

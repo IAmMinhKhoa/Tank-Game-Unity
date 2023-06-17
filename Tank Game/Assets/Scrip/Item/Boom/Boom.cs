@@ -22,7 +22,7 @@ public class Boom : MonoBehaviour
             if (((1 << collision.gameObject.layer) & allowedLayers[i].value) != 0)
             {
                 String name_layer = LayerMask.LayerToName(collision.gameObject.layer);
-                Debug.Log(name_layer);
+                
                 if (name_layer == "enemies" || name_layer == "player")
                 {
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4645538604259000201}
   m_Layer: 0
   m_Name: System Game
-  m_TagString: Untagged
+  m_TagString: System_Game
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,5 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countEnemies: 0
   ArPlayer: []
-  indexPlayer: 0
+  dataTank: {fileID: 11400000, guid: ca38f625092b63442b9f3b84c7ff5426, type: 2}
   enemies: []
+  indexPlayer: 0
