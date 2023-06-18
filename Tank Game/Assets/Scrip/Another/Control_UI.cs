@@ -8,7 +8,7 @@ public class Control_UI : MonoBehaviour
    public TMP_Text textCount;
    [SerializeField] GameObject ScreenOver;
    
-   void Update()
+   void FixedUpdate()
    {
     GameOver();
     textCount.text=System_Game.instance.countEnemies.ToString();
