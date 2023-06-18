@@ -11,19 +11,16 @@ public class Destroy_After : MonoBehaviour
     public bool allowActive;
     void OnEnable ()
     {
-        UnityEngine.Debug.Log("Object created.");
         if(allowActive!=true){
             Destroy(this.gameObject, time);
         }else
         {
             StartCoroutine(ActivateGameObject(time));
-        }
-        
+        } 
     }
    
      protected IEnumerator ActivateGameObject(float time)
     {
-       
         yield return new WaitForSeconds(time);
         gameObject.SetActive(false);
     }

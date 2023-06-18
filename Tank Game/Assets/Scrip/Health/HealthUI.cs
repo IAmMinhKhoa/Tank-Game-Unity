@@ -22,9 +22,13 @@ public class HealthUI : MonoBehaviour
 
     private void OnDestroy()
     {
-        health.OnHealthChanged -= UpdateHealthUI;
-        health.OnDamageTaken -= ShowDamageText;
-        health.OnAddHealt -= ShowAddHealtText;
+        if (health != null)
+        {
+            health.OnHealthChanged -= UpdateHealthUI;
+            health.OnDamageTaken -= ShowDamageText;
+            health.OnAddHealt -= ShowAddHealtText;
+        }
+       
     }
 
     private void UpdateHealthUI(int currentHealth, int maxHealth)
