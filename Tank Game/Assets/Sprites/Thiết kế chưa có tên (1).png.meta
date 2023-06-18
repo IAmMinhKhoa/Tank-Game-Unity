@@ -306,7 +306,7 @@ TextureImporter:
         height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 20, y: 15, z: 17, w: 15}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -874,42 +874,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_0": -847576224
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_1": 720073488
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_10": 1088539028
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_11": 1574720698
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_7": -727086118
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_23": -383623970
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_8": 2120751973
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_32": 1719153156
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_25": -697180803
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_2": -447534156
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_33": -2128794452
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_14": -559826095
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_31": -1301517084
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_30": -1939630774
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_15": 381730963
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_12": -1377742333
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_13": -1993988017
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_14": -559826095
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_15": 381730963
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_16": -1966340640
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_17": -1954607655
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_18": 15625628
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_19": 1005336192
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_2": -447534156
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_20": -465112579
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_21": 1312361243
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_22": 1822151237
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_23": -383623970
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_24": 1538635471
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_25": -697180803
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_26": 500650296
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_27": -1491110028
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_28": -149151369
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_29": 1535637402
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_3": -292371506
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_30": -1939630774
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_31": -1301517084
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_32": 1719153156
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_33": -2128794452
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_34": -1185031824
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_35": 1371689774
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_4": -48828622
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_27": -1491110028
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_24": 1538635471
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_5": 445580172
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_6": 1561428086
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_7": -727086118
-      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_8": 2120751973
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_18": 15625628
       "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_9": 665504849
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_26": 500650296
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_28": -149151369
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_22": 1822151237
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_11": 1574720698
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_19": 1005336192
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_1": 720073488
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_10": 1088539028
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_21": 1312361243
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_3": -292371506
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_4": -48828622
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_0": -847576224
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_34": -1185031824
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_17": -1954607655
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)_16": -1966340640
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

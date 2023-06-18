@@ -48,6 +48,7 @@ public class Sound_Manager : MonoBehaviour
 
     private Dictionary<SoundType, AudioSource> audioSources;
     public int index_Sound_BR=1;
+    public bool activeSound = true;
 
     private void Awake()
     {
@@ -60,30 +61,27 @@ public class Sound_Manager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        
-
         audioSources = new Dictionary<SoundType, AudioSource>();
-
         foreach (Sound sound in sounds)
         {
             AudioSource source = gameObject.AddComponent<AudioSource>();
-            sound.SetOriginalVolume(sound   .volume); // L?u tr? gi� tr? �m l??ng ban ??u c?a �m thanh
+            sound.SetOriginalVolume(sound   .volume); 
             source.clip = sound.clip;
             source.volume = sound.volume;
             source.pitch = sound.pitch;
             source.loop = sound.loop;
-
             audioSources.Add((SoundType)System.Enum.Parse(typeof(SoundType), sound.name), source);
         }
-       
+         
+         activeSound = PlayerPrefs.GetInt("Sound") == 1 ? true : false;
+        if (activeSound)
+        {
+            PlayBackGround(index_Sound_BR);
+        }
     }
-    
-    void Start()
-    {
-         PlayBackGround(index_Sound_BR);
-    }
-    void PlayBackGround(int index){
+
+  
+    public void PlayBackGround(int index){
         if(index==1){
             Sound_Manager.instance.PlaySound(SoundType.BackGround);
         }
@@ -126,6 +124,14 @@ public class Sound_Manager : MonoBehaviour
             Sound sound = sounds.Find(s => s.name == entry.Key.ToString());
             entry.Value.volume = sound.originalVolume;
         }
+        PlayBackGround(index_Sound_BR);
     }
+    private void OnDestroy()
+    {
+       
+        int temp = activeSound ? 1 : 0;
+        PlayerPrefs.SetInt("Sound", temp);
+    }
+  
 
 }

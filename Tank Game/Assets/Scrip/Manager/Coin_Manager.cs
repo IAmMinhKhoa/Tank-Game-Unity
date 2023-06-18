@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Coin_Manager : MonoBehaviour
 {
-
     public int coin = 0;
     public Text moneyText;
     public static Coin_Manager instance;

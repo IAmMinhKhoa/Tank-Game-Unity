@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354102cce8105404884872f38993eeaf, type: 3}
   m_Name: UseTankData
   m_EditorClassIdentifier: 
-  currentTank: 0
+  currentTank: 1
   Tanks: 00000000

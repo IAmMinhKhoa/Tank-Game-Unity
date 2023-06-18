@@ -7,16 +7,26 @@ public class Control_UI : MonoBehaviour
 {
    public TMP_Text textCount;
    [SerializeField] GameObject ScreenOver;
-   
-   void FixedUpdate()
+    [SerializeField] GameObject ScreenWin;
+
+    void FixedUpdate()
    {
-    GameOver();
-    textCount.text=System_Game.instance.countEnemies.ToString();
+        GameOver();
+        WinGame();
+        textCount.text=System_Game.instance.countEnemies.ToString();
    }
    void GameOver(){
-    if(System_Game.instance.ArPlayer.Length==0)
-    {
-        ScreenOver.SetActive(true);
-    }
+        if(System_Game.instance.ArPlayer.Length==0)
+        {
+            ScreenOver.SetActive(true);
+        }
    }
+    void WinGame()
+    {
+        if (System_Game.instance.countEnemies == 0)
+        {
+            ScreenWin.SetActive(true);
+        }
+    }
+   
 }
