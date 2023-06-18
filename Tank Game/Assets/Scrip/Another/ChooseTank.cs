@@ -8,7 +8,7 @@ public class ChooseTank : MonoBehaviour
 {
     
     public List<CostAndText> CostAndTextTank;
-  
+    public GameObject TextWarningCoin;  
     public void ChooseTankIndex(int index)
     {
         List<int> Tanks = System_Game.instance.dataTank.Tanks;
@@ -17,10 +17,15 @@ public class ChooseTank : MonoBehaviour
             System_Game.instance.dataTank.currentTank = index;
         }else
         {
-            BuyTank(index);
-            Tanks.Add(index);
-            loadTankBought();
-            System_Game.instance.dataTank.currentTank = index;
+            if(CostAndTextTank[index-1].CostTank<=Coin_Manager.instance.coin){
+                BuyTank(index);
+                Tanks.Add(index);
+                loadTankBought();
+                System_Game.instance.dataTank.currentTank = index;
+            }else{
+                TextWarningCoin.SetActive(true);
+            }
+           
         }
     }
     private void Start()
@@ -37,8 +42,8 @@ public class ChooseTank : MonoBehaviour
       
         foreach (int tank in Tanks)
         {
-            if(Tanks.Count>1)
-                CostAndTextTank[tank].CostText.text = "BOUGHT";
+            if(tank!=0)
+                CostAndTextTank[tank-1].CostText.text = "BOUGHT";
         }
 
     }

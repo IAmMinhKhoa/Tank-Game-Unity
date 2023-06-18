@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: UseTankData
   m_EditorClassIdentifier: 
   currentTank: 1
-  Tanks: 00000000
+  Tanks: 0000000001000000

@@ -1,14 +1,30 @@
+using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Destroy_After : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //allow destroy or setactive false this object 
     public float time;
-    void Start()
+    public bool allowActive;
+    void OnEnable ()
     {
-        Destroy(this.gameObject, time);
+        UnityEngine.Debug.Log("Object created.");
+        if(allowActive!=true){
+            Destroy(this.gameObject, time);
+        }else
+        {
+            StartCoroutine(ActivateGameObject(time));
+        }
+        
     }
-
+   
+     protected IEnumerator ActivateGameObject(float time)
+    {
+       
+        yield return new WaitForSeconds(time);
+        gameObject.SetActive(false);
+    }
 }
