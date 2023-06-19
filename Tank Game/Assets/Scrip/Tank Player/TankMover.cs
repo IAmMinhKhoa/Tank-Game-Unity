@@ -19,6 +19,9 @@ public class TankMover : MonoBehaviour
     public float deacceleration;
     bool isMove=false;
     bool soundTrack=false;
+    protected Animator Track_1;
+    protected Animator Track_2;
+
     private void Awake()
     {
         rb2d = GetComponentInParent<Rigidbody2D>();
@@ -26,6 +29,11 @@ public class TankMover : MonoBehaviour
         acceleration = movementData.acceleration;
         speedRoataion = movementData.speedRotation;
         deacceleration = movementData.deaccelereration; 
+    }
+    private void Start()
+    {
+         Track_1 = transform.GetChild(0).GetComponent<Animator>();
+         Track_2 = transform.GetChild(1).GetComponent<Animator>();
     }
     public void Move(Vector2 movementvector)
     {
@@ -59,6 +67,10 @@ public class TankMover : MonoBehaviour
             isMove=true;
             currentSpeed += acceleration * Time.deltaTime;
         }
+        else 
+        {
+            currentSpeed -= deacceleration * Time.deltaTime;
+        }
        
 
         currentSpeed = Mathf.Clamp(currentSpeed, 0, MaxSpeed);
@@ -73,12 +85,21 @@ public class TankMover : MonoBehaviour
         if(isMove==true && soundTrack==false){
             soundTrack=true;
             Sound_Manager.instance.PlaySound(SoundType.TankTrack);
-        }else if(isMove==false)
+            AnimationTrack(true);
+        }
+        else if(isMove==false)
         {
-            soundTrack=false;
+            AnimationTrack(false);
+            soundTrack =false;
             Sound_Manager.instance.StopSound(SoundType.TankTrack);
         }
         
+    }
+
+    void AnimationTrack(bool temp)
+    {
+        Track_1.SetBool("track", temp);
+        Track_2.SetBool("track", temp);
     }
 
 
