@@ -16,7 +16,7 @@ public class Control_UI : MonoBehaviour
         textCount.text=System_Game.instance.countEnemies.ToString();
    }
    void GameOver(){
-        if(System_Game.instance.ArPlayer.Length==0)
+        if((System_Game.instance.ArPlayer.Length==0))
         {
             ScreenOver.SetActive(true);
         }
