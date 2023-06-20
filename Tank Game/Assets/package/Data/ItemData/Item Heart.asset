@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Item Heart
   m_EditorClassIdentifier: 
   PrefabItem: {fileID: 4750667328517304504, guid: 252301a91ad95754b987700da55d8d95, type: 3}
-  Quantity: 100
+  Quantity: 6666

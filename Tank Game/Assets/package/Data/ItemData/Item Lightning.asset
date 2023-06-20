@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Item Lightning
   m_EditorClassIdentifier: 
   PrefabItem: {fileID: 7234798011720800201, guid: 8300666db9fce2648983606bd2f74f32, type: 3}
-  Quantity: 291
+  Quantity: 6666

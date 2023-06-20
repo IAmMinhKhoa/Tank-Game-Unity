@@ -32,7 +32,7 @@ public class ChooseTank : MonoBehaviour
     {
         foreach (CostAndText index in CostAndTextTank)
         {
-            index.CostText.text = index.CostTank.ToString();
+            index.CostText.text = index.CostTank.ToString()+" Coin";
         }
         loadTankBought();
     }
