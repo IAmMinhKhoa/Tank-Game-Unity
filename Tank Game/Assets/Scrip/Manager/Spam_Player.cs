@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spam_Player : MonoBehaviour
 {
     [SerializeField] GameObject TankRed;
-    [SerializeField] GameObject TankBlack;
+    [SerializeField] GameObject TankPurble;
     [SerializeField] GameObject TankGreen;
     [SerializeField] Transform SpamPoint;
     protected int IDtank;
@@ -17,7 +17,7 @@ public class Spam_Player : MonoBehaviour
             Instantiate(TankRed, SpamPoint.position, Quaternion.identity);
         }else if(IDtank == 1)
         {
-            Instantiate(TankBlack, SpamPoint.position, Quaternion.identity);
+            Instantiate(TankPurble, SpamPoint.position, Quaternion.identity);
         }else if (IDtank == 2)
         {
             Instantiate(TankGreen, SpamPoint.position, Quaternion.identity);

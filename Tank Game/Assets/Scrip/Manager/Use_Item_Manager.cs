@@ -22,16 +22,21 @@ public class Use_Item_Manager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("b"))
+        if (Input.GetKeyDown("3"))
         {
             UseObject(itemAndButtonPairs[0].itemData);
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("2"))
         {
             UseObject(itemAndButtonPairs[1].itemData);
         }
+        if (Input.GetKeyDown("1"))
+        {
+            UseObject(itemAndButtonPairs[2].itemData);
+        }
         GetTextInBtn(itemAndButtonPairs[0].button).text = itemAndButtonPairs[0].itemData.Quantity.ToString();
         GetTextInBtn(itemAndButtonPairs[1].button).text = itemAndButtonPairs[1].itemData.Quantity.ToString();
+        GetTextInBtn(itemAndButtonPairs[2].button).text = itemAndButtonPairs[2].itemData.Quantity.ToString();
     }
     public void UseItemBoom()
     {
@@ -40,6 +45,10 @@ public class Use_Item_Manager : MonoBehaviour
     public void UseItemLightning()
     {
         UseObject(itemAndButtonPairs[1].itemData);
+    }
+    public void UseItemHear()
+    {
+        UseObject(itemAndButtonPairs[2].itemData);
     }
 
     protected void UseObject(ItemData item)

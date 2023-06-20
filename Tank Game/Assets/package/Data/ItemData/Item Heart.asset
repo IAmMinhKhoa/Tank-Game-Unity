@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354102cce8105404884872f38993eeaf, type: 3}
-  m_Name: UseTankData
+  m_Script: {fileID: 11500000, guid: 36ba86b4eea420d4f84d42e8dc985815, type: 3}
+  m_Name: Item Heart
   m_EditorClassIdentifier: 
-  currentTank: 1
-  Tanks: 00000000
+  PrefabItem: {fileID: 4750667328517304504, guid: 252301a91ad95754b987700da55d8d95, type: 3}
+  Quantity: 100

@@ -15,7 +15,8 @@ public enum SoundType
     Spam_Tank,
     Click,
     BackGround_GameOver,
-    BackGround_Choose_Level
+    BackGround_Choose_Level,
+    BackGround_Choose_Player
 }
 
 [System.Serializable]
@@ -91,7 +92,11 @@ public class Sound_Manager : MonoBehaviour
         else if(index==3){
             Sound_Manager.instance.PlaySound(SoundType.BackGround_Choose_Level);
         }
-        
+        else if (index == 4)
+        {
+            Sound_Manager.instance.PlaySound(SoundType.BackGround_Choose_Player);
+        }
+
     }
 
     public void PlaySound(SoundType soundType)

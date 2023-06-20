@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &189150198
 Transform:
   m_ObjectHideFlags: 0
@@ -49,6 +49,8 @@ MonoBehaviour:
     button: {fileID: 0}
   - itemData: {fileID: 11400000, guid: 0be68f6bcccdafa4aa122ed591daf40f, type: 2}
     button: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: a7bf9f33504520244b9fde2a38e4e623, type: 2}
+    button: {fileID: 0}
 --- !u!1 &1692051876
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,7 +67,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1692051877
 Transform:
   m_ObjectHideFlags: 0
@@ -94,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TankRed: {fileID: 4813508185512520302, guid: b9d22f0d32a68a146943243385be1e5c, type: 3}
-  TankBlack: {fileID: 6695872603517849710, guid: 8b083b4b55c31444b8aab239816adcc1, type: 3}
+  TankPurble: {fileID: 6695872603517849710, guid: 8b083b4b55c31444b8aab239816adcc1, type: 3}
   TankGreen: {fileID: 5009693026055767004, guid: 3c60dbab00449754287ef660061a17b9, type: 3}
   SpamPoint: {fileID: 0}
 --- !u!1 &1824247732
@@ -144,7 +146,7 @@ MonoBehaviour:
   sounds:
   - name: BackGround
     clip: {fileID: 8300000, guid: 4a8a2fd15847c4e478e80dc4bf942c45, type: 3}
-    volume: 0.121
+    volume: 0.13
     pitch: 1.39
     loop: 1
     source: {fileID: 0}
@@ -200,19 +202,27 @@ MonoBehaviour:
     originalVolume: 0
   - name: BackGround_GameOver
     clip: {fileID: 8300000, guid: eddd3bc1af0fe1d4a95598d9014bdcd5, type: 3}
-    volume: 1
+    volume: 0.13
     pitch: 1.9
     loop: 1
     source: {fileID: 0}
     originalVolume: 0
   - name: BackGround_Choose_Level
     clip: {fileID: 8300000, guid: 9562577ea9092464da07828f040a2826, type: 3}
-    volume: 0.722
+    volume: 0.13
+    pitch: 1.9
+    loop: 1
+    source: {fileID: 0}
+    originalVolume: 0
+  - name: BackGround_Choose_Player
+    clip: {fileID: 8300000, guid: 433a7c40d5b62ad4a98ea04150124de9, type: 3}
+    volume: 0.13
     pitch: 1.9
     loop: 1
     source: {fileID: 0}
     originalVolume: 0
   index_Sound_BR: 1
+  activeSound: 1
 --- !u!1 &1835910542
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2304057827914294921
 Transform:
   m_ObjectHideFlags: 0
@@ -368,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2304057828452013230
 Transform:
   m_ObjectHideFlags: 0
