@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Pathfinding;
 #if UNITY_5_5_OR_NEWER
 using UnityEngine.Profiling;
-using static Codice.CM.Common.Merge.MergePathResolver;
+//using static Codice.CM.Common.Merge.MergePathResolver;
 
 #endif
 #if NETFX_CORE

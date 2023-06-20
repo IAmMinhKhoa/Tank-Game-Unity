@@ -374,5 +374,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54da34adea00d484da841b10175e8771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoolDownBom: 2
+  CoolDownBom: 5
   TextCD: {fileID: 775407512475676812}

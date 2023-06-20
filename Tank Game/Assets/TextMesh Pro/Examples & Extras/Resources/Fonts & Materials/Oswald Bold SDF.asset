@@ -61,7 +61,7 @@ Material:
     - _GlowInner: 0.81
     - _GlowOffset: 1
     - _GlowOuter: 1
-    - _GlowPower: 0.9798964
+    - _GlowPower: 0.7420515
     - _GradientScale: 10
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
@@ -133,7 +133,6 @@ MonoBehaviour:
     m_StyleName: Bold
     m_PointSize: 90
     m_Scale: 1
-    m_UnitsPerEM: 0
     m_LineHeight: 133.37402
     m_AscentLine: 107.40234
     m_CapLine: 80

@@ -19,6 +19,7 @@ public class Control_UI : MonoBehaviour
         if((System_Game.instance.ArPlayer.Length==0))
         {
             ScreenOver.SetActive(true);
+            Sound_Manager.instance.StopSound(SoundType.TankTrack);
         }
    }
     void WinGame()
@@ -26,6 +27,7 @@ public class Control_UI : MonoBehaviour
         if (System_Game.instance.countEnemies == 0)
         {
             ScreenWin.SetActive(true);
+            Sound_Manager.instance.StopSound(SoundType.TankTrack);
         }
     }
    
