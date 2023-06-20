@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 3342082136248326804}
   - component: {fileID: 115205303}
   m_Layer: 8
-  m_Name: Turret Base
+  m_Name: Turret Base Tank
   m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
