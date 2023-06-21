@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/ChooseTank.unity
     guid: 7f87e574629031c458fb027c3c0aba77
   - enabled: 1
+    path: Assets/Scenes/Buy Item.unity
+    guid: 4d1f53c5d20a6b0428c20673054cd4a6
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/hetcuu.unity
+    guid: 30b7f091519b7ec449340d040eda4fd0
   m_configObjects: {}

@@ -59,7 +59,7 @@ public class Use_Item_Manager : MonoBehaviour
             {
                 Vector2 playerPos = Player.transform.position;
                 Vector2 playerForward = Player.transform.right;
-                Vector2 objectPos = playerPos - playerForward.normalized * 0.7f;
+                Vector2 objectPos = playerPos - playerForward.normalized * -0.5f;
                 GameObject newObject = Instantiate(item.PrefabItem, objectPos, Quaternion.identity);
 
                 item.decreaseQuantity(1);

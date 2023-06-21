@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tank_GREEN_MovementData
   m_EditorClassIdentifier: 
   MaxSpeed: 400
-  speedRotation: 100
+  speedRotation: 50
   acceleration: 100
   deaccelereration: 600

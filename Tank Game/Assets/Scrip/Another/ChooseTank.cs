@@ -43,7 +43,7 @@ public class ChooseTank : MonoBehaviour
         foreach (int tank in Tanks)
         {
             if(tank!=0)
-                CostAndTextTank[tank-1].CostText.text = "?ã S? H?u";
+                CostAndTextTank[tank-1].CostText.text = "Da So Huu";
         }
 
     }
