@@ -2,7 +2,8 @@
 "Tank of War" là một trò chơi được phát triển bởi Unity với đồ họa 2D đẹp mắt. Trong trò chơi này, người chơi sẽ hóa thân thành một chiếc xe tank và chiến đấu chống lại đội quân địch trên bản đồ.
 ## Lối Chơi
 ![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/9f774398-fd27-43fb-b7dd-76569bb1fb88)
-![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/1324c1bb-ed3e-4c1e-b99b-d9dd4f3b23a2)
+![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/ec7a24e1-dc30-4060-b58a-5b175d799f67)
+
 
 
 
