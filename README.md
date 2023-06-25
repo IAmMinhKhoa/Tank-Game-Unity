@@ -42,7 +42,26 @@ Việc thu thập và sử dụng các vật phẩm này sẽ giúp người ch�
 ![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/c59836ad-c3f9-4a0f-ad3b-4fd70383d0bc)
 ![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/a537341f-9b9d-4215-aa1b-63679d69c397)
 
-
+## Âm thanh
+- Hệ thống âm thanh nhạc nền của game.
+- Âm thanh nhấn nút
+- Âm thanh bắn từ tank
+- Âm thanh nhặt vật phẩm
+- Âm thanh rơi vào bãi lầy
+- Âm thanh boom nổ
+- Âm thanh xe tank di chuyển
+## ĐIỂM MẠNH RÚT RA TỪ PROJECT
++Học hỏi được nhiều thứ design 1 game từ kịch bản hình ảnh, cốt truyện. <p>
++Học hỏi nhiều nguồn và nghiên cứu các chức năng mình mong muốn (research skills) <p>
++Nâng cao kĩ năng code, UI. . . cho các dự án sau. <p>
++Thiết kế hệ thống âm thanh tốt.
++Thiết kế hệ thống map.
++Sử dụng Object Pool tối ưu đạn bắn ra.
++Nâng cao trình title map hơn.
++Sử dụng scriptableobject, PlayerPrefs để lưu DATA
+## CÁC HẠN CHẾ CÒN GẶP
++Còn hạn chế map (do bí ai đia quá)
++UX di chuyển chưa quá mượt mà và nhận nhiều phàn nàn.
 
 ## TẤT CẢ NGUỒN ẢNH ĐỀU LÀ SƯU TẦM TRÊN INTERNET PHỤC VỤ CHO VIỆC HỌC TẬP KHÔNG NHẦM MỤC ĐÍCH TRỤC LỢI !!!
 ## NGÀY THỰC HIỆN : THÁNG 01-2023 ĐẾN THÁNG 05-2023
