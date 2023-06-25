@@ -31,4 +31,8 @@ Việc thu thập và sử dụng các vật phẩm này sẽ giúp người ch�
 ## Các BOSS Enemy
 ![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/1d2762e7-a4ff-43e8-bbb6-7ddda78b82ac)
 ![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/20dae7a0-6ada-4ed1-a1e0-19467e1aa54e)
-## Các
+## Các vật thể khác
+![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/0b9d8457-52fe-417e-a4f9-e578c313750b)
+## Map
+![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/d375ea83-33c7-4454-ab37-5a514732eac6)
+![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/06e6bec2-2df2-4b43-b0d5-d5aa6e3e1ccb)
