@@ -54,14 +54,14 @@ Việc thu thập và sử dụng các vật phẩm này sẽ giúp người ch�
 +Học hỏi được nhiều thứ design 1 game từ kịch bản hình ảnh, cốt truyện. <p>
 +Học hỏi nhiều nguồn và nghiên cứu các chức năng mình mong muốn (research skills) <p>
 +Nâng cao kĩ năng code, UI. . . cho các dự án sau. <p>
-+Thiết kế hệ thống âm thanh tốt.
-+Thiết kế hệ thống map.
-+Sử dụng Object Pool tối ưu đạn bắn ra.
-+Nâng cao trình title map hơn.
-+Sử dụng scriptableobject, PlayerPrefs để lưu DATA
++Thiết kế hệ thống âm thanh tốt.<p>
++Thiết kế hệ thống map.<p>
++Sử dụng Object Pool tối ưu đạn bắn ra.<p>
++Nâng cao trình title map hơn.<p>
++Sử dụng scriptableobject, PlayerPrefs để lưu DATA<p>
 ## CÁC HẠN CHẾ CÒN GẶP
-+Còn hạn chế map (do bí ai đia quá)
-+UX di chuyển chưa quá mượt mà và nhận nhiều phàn nàn.
++Còn hạn chế map (do bí ai đia quá)<p>
++UX di chuyển chưa quá mượt mà và nhận nhiều phàn nàn.<p>
 
 ## TẤT CẢ NGUỒN ẢNH ĐỀU LÀ SƯU TẦM TRÊN INTERNET PHỤC VỤ CHO VIỆC HỌC TẬP KHÔNG NHẦM MỤC ĐÍCH TRỤC LỢI !!!
 ## NGÀY THỰC HIỆN : THÁNG 01-2023 ĐẾN THÁNG 05-2023
