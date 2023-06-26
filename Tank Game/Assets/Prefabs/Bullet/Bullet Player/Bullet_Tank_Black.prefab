@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBullet: 13
-  damage: 20
-  maxDistance: 30
+  damage: 15
+  maxDistance: 23
   allowedLayers:
   - serializedVersion: 2
     m_Bits: 512
