@@ -2,6 +2,9 @@
 [**CONTACT TO ME**](https://www.facebook.com/Ireking666)
 #### **Email: tnminhkhoa666@gmail.com**
 [**Bản thiết kế bằng canva của mình**](https://www.canva.com/design/DAFkNTnQKrk/7vzJeTrkXwnNXJfh_VXRVw/edit?utm_content=DAFkNTnQKrk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) <p>
+[**Link Youtube Demo**](https://youtu.be/NFWGHP9ODpU) <p>
+
+
 "Tank of War" là một trò chơi được phát triển bởi Unity với đồ họa 2D đẹp mắt. Trong trò chơi này, người chơi sẽ hóa thân thành một chiếc xe tank và chiến đấu chống lại đội quân địch trên bản đồ.
 ## Lối Chơi
 ![image](https://github.com/IAmMinhKhoa/Tank-Game-Unity/assets/88275892/9f774398-fd27-43fb-b7dd-76569bb1fb88)
