@@ -1,6 +1,6 @@
 ## Giới Thiệu
 [**CONTACT TO ME**](https://www.facebook.com/Ireking666)
-#### **Email: tnminhkhoa666@gmail.com**
+#### **Email: khoaminh6969@gmail.com**
 [**Bản thiết kế bằng canva của mình**](https://www.canva.com/design/DAFkNTnQKrk/7vzJeTrkXwnNXJfh_VXRVw/edit?utm_content=DAFkNTnQKrk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) <p>
 [**Link Youtube Demo**](https://youtu.be/NFWGHP9ODpU) <p>
 
